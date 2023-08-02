@@ -1,4 +1,4 @@
-# Lab Website
+# SEDIMENT DISASTERS RESEARCH (SE~DIRE) LABORATORY
 
 Welcome to the lab website! This repository contains all the details related to our lab, including information about ongoing projects, publications, PhD students, and more.
 
