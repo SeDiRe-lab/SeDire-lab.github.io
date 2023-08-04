@@ -37,6 +37,7 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
+ 
   </head>
 
   <body>
@@ -197,18 +198,18 @@
               </div>
               <div class="row">
                 <div class="col-lg-12">
-                  <table class="table table-striped table-hover">
+                  <table class="table table-striped table-hover" id="conferencesTable">
                     <thead>
                       <tr>
                         <th scope="col">S.No.</th>
-                        <th scope="col">Title</th>
-                        <th scope="col">Authors</th>
+                        <th scope="col" style="width: 35%;">Title</th>
+                        <th scope="col" style="width: 30%;">Authors</th>
                         <th scope="col">Year</th>
-                        <th scope="col">Conference</th>
+                        <th scope="col" style="width: 20%;">Conference</th>
                         <!-- <th scope="col">Volume</th>
                         <th scope="col">Pages</th> -->
-                        <th scope="col">DOI</th>
-                      </tr>
+                        <th scope="col" style="width: 10%">DOI</th>
+                      </tr> 
                     </thead>
                     <tbody>
                       <tr>
@@ -229,14 +230,48 @@
                           <a href="https://doi.org/10.5194/egusphere-egu23-11115" target="_blank">https://doi.org/10.5194/egusphere-egu23-11115</a>
  
                         </td>
-                        <!-- <td>1-12 ,</td>
-                        <td></td> -->
+                       
                       </tr>
+
                       <tr>
                         <th scope="row">2</th>
                         <td>
                           <a href="#">
-                            <strong>Designing a SMART flood early warning system for a lesser Himalayan urban region</strong>
+                            Co-seismic landslide damming in the Indian Himalayas
+                          </a>
+                        </td>
+                        <td>
+                          <b>Akshat Vashistha</b>, <b>Srikrishnan Siva Subramanian</b>, Josodhir Das
+                        </td>
+                        <td>2023</td>
+                        <td>European Geosciences Union General Assembly 2023</td>
+                        <td>
+                          <a href="https://doi.org/10.5194/egusphere-egu23-11125" target="_blank">https://doi.org/10.5194/egusphere-egu23-11125</a>
+                        </td>
+                      </tr> 
+                     
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>
+                          <a href="#">
+                            Correlating grain-size distributions, transport mechanism, and runout distance of debris flow deposits in the Himalayas
+                          </a>
+                        </td>
+                        <td>
+                          <b>Manish Dewrari</b>, <b>Srikrishnan Siva Subramanian</b>
+                        </td>
+                        <td>2023</td>
+                        <td>European Geosciences Union General Assembly 2023</td>
+                        <td>
+                          <a href="https://doi.org/10.5194/egusphere-egu23-13031" target="_blank">https://doi.org/10.5194/egusphere-egu23-13031</a>
+                        </td>
+                      </tr> 
+
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>
+                          <a href="#">
+                            Designing a SMART flood early warning system for a lesser Himalayan urban region
                           </a>
                         </td>
                         <td>
@@ -248,15 +283,80 @@
                           <!-- <a href="https://doi.org/xxxxxx" target="_blank">https://doi.org/xxxxxx</a> -->
                         </td>
                       </tr>
+
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>
+                          <a href="#">
+                            Numerical Model Based Correlation of Rainfall Intensity-Duration Thresholds of Landslides with Velocities from Seismological Monitoring   </a>
+                        </td>
+                        <td>
+                          <b>Manish Dewrari</b>, Zhu, Yulong, <b>Srikrishnan Siva Subramanian</b>
+                        </td>
+                        <td>2022</td>
+                        <td>American Geosciences Union General Assembly 2022</td>
+                        <td>
+                          <!-- <a href="https://ui.adsabs.harvard.edu/abs/2022AGUFMNH24B..04D/abstract" target="_blank" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"
+                          >
+                          https://ui.adsabs.harvard.edu/abs/2022AGUFMNH24B..04D/abstract
+                        </a> -->
+                        </td>
+                      </tr>
+          
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>
+                          <a href="#">
+                            Likelihood of Earthquake-Induced Landslide Damming in the Himalayas and Potential for Seismological Monitoring  </a>
+                        </td>
+                        <td>
+                          <b>Akshat Vashistha</b>, <b>Srikrishnan Siva Subramanian</b>, Josodhir Das
+                        </td>
+                        <td>2022</td>
+                        <td>American Geosciences Union General Assembly 2022</td>
+                        <td>
+                          <!-- <a href="https://ui.adsabs.harvard.edu/abs/2022AGUFMNH22A..06V/abstract"  target="_blank">https://ui.adsabs.harvard.edu/abs/2022AGUFMNH22A..06V/abstract</a> -->
+                        </td>
+                      </tr>
                     
                     
+
+ 
+
+                      
                     </tbody>
                   </table>
                 </div>
               </div>
             </div>
           </section>
-          <!-- End publications table -->
+           
+          
+          
+
+
+
+          
+ 
+<!-- End publications table -->
+
+
+
+
+<script>
+  // Function to renumber rows in the table
+  function renumberRows() {
+    var table = document.getElementById("conferencesTable");
+    var rows = table.getElementsByTagName("tr");
+    for (var i = 1; i < rows.length; i++) {
+      rows[i].getElementsByTagName("th")[0].innerText = i;
+    }
+  }
+
+  // Call the function to renumber rows
+  renumberRows();
+</script>
+
         </main>
         <!-- End #main -->
 
